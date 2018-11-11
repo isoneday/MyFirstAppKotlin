@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_kalkulator.*
+import org.jetbrains.anko.sdk27.coroutines.onClick
+import org.jetbrains.anko.toast
 
 class KalkulatorActivity : AppCompatActivity() {
 
@@ -11,18 +13,18 @@ class KalkulatorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kalkulator)
 
-        btntambah.setOnClickListener {
+        btntambah.onClick {
             if (validate()) {
                 calculate("+")
             } else {
-                Toast.makeText(this, "Tidak boleh kosong", Toast.LENGTH_SHORT)
+                toast(getString(R.string.kosong))
             }
         }
-        btntambah.setOnClickListener {
+        btntambah.onClick {
             if (validate()) {
                 calculate("-")
             } else {
-                Toast.makeText(this, "Tidak boleh kosong", Toast.LENGTH_SHORT)
+                toast(getString(R.string.kosong))
             }
         }
         btntambah.setOnClickListener {
