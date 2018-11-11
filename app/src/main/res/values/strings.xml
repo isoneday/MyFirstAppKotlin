@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyFirstApp Kotlin</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="inputkan_nama_anda">inputkan nama anda</string>
+    <string name="password">Password</string>
+    <string name="forgot_ur_password">
+        <u>
+            <b>Forgot</b>
+            ur password
+        </u>
+    </string>
+</resources>
